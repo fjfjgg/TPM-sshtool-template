@@ -1,0 +1,17 @@
+{
+  "corrector": "~/TPM-sshtool-template/bin/assess-tpm.sh",
+  "remoteFolder": "/tmp",
+  "servers": [ "user1@server1", "user2@server2", "user3@server3" ],
+  "roundRobin": true,
+  "privateKeyLines": ["-----BEGIN RSA PRIVATE KEY-----",
+                      "copy",
+                      "ssh",
+                      "private",
+                      "key",
+                      "lines",
+                      "here==",
+                      "-----END RSA PRIVATE KEY-----"],
+  "specialUser": "fjfj~testI",
+  "specialFile": "update.zip",
+  "specialCorrector": "~/TPM-sshtool-template/bin/updater-tpm.sh"
+}
